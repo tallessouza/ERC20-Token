@@ -10,7 +10,7 @@ async function main() {
 
 
   const Token = await hre.ethers.getContractFactory("MyToken");
-  const lock = await Token.deploy(1000, "O Token", 18, "OTK");
+  const lock = await Token.deploy("1000", "O Token", "18", "OTK");
 
   await lock.deployed();
 
